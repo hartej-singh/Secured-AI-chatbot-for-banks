@@ -1,0 +1,102 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi", "How are you", "Is anyone there?","What's new?","Yo!", "What's up?","Sup?", "Hello","Hey","It's nice to meet you."," It's good to see you again", "Good day"],
+         "responses": ["Hello, thanks for visiting", "Good to see you again", "Hi there, how can I help?"],
+         "context_set": ""
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye","Byeee", "i will go", "close"],
+         "responses": ["See you later, thanks for visiting", "Have a nice day", "Bye! Come back again soon."]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"]
+        },
+        {"tag": "fun",
+        "patterns": ["Are you real?", "you are real?", "really u are real?"],
+        "responses": ["I'm as real as you believe I'm"]
+        },
+        {"tag": "noanswer",
+        "patterns": [" ", "nnnn", "123","555","ffff", "ss"],
+        "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+        "context": [""]
+        },
+        {"tag": "options",
+        "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
+        "responses": ["I can guide you through Account, hours are we open, home delivery options"],
+        "context": [""]
+        },
+        {"tag": "hours",
+         "patterns": ["What hours are you open?", "What are your hours?", "When are you open?" ],
+         "responses": ["We're open every day 9am-4pm except friday 9am-2pm", "Our hours are 9am-4pm every day except friday 9am-2pm"]
+        },
+        {"tag": "location",
+         "patterns": ["What is your location?", "Where are you located?", "What is your address?", "Where is your restaurant situated?" ],
+         "responses": ["We are on the intersection of London Alley and Bridge Avenue.", "We are situated at the intersection of London Alley and Bridge Avenue", "Our Address is: 1000 Bridge Avenue, London EC3N 4AJ, UK"]
+        },
+        {"tag": "accountstype",
+         "patterns": ["What are the types of accounts in banks?", "accounts types in banks?", "accounts types?" ],
+         "responses": ["The types of accounts are Checking Account, Saving Account, Money Market Account and CD (Certificate of Deposits) Account"]
+        },
+        {"tag": "CheckingAccount",
+         "patterns": ["What is  Checking Account?", " Checking Account?", " Checking Account meant?", "infomation of  Checking Account", "infomation of  Checking Account in your bank"],
+         "responses": ["Checking Account: You can access the account as the saving account but, unlike saving account, you cannot earn interest on this account. The benefit of this account is that there is no limit for withdrawal. <bank redirect link>"]
+        },
+        {"tag": "SavingAccount",
+        "patterns": ["What is Saving Account?", " Saving Account?", " Saving Account meant?", "infomation of Saving Account","infomation of interest rate in Saving Account", "infomation of interest rate in Saving Account in your bank"],
+        "responses": ["Saving Account: You can save your money in such account and also earn interest(5.05%) on it. The number of withdrawal is limited and need to maintain the minimum amount of balance in the account to remain active. <bank redirect link>"]
+        },
+        {"tag": "MoneyMarketAccount",
+        "patterns": ["What is Money Market Account?", "Money Market Account?", "Money Market Account meant?", "infomation of Money Market Account", "infomation of Money Market Account in your bank"],
+        "responses": ["Money Market Account: This account gives benefits of both saving and checking accounts. You can withdraw the amount and yet you can earn higher interest on it. This account can be opened with a minimum balance. <bank redirect link>"]
+        },
+        {"tag": "CertificateofDeposits",
+        "patterns": ["What is Certificate of Deposits Account?", "Certificate of Deposits?", " Certificate of Deposits Account meant", "infomation of  Certificate of Deposits Account", "infomation of  Certificate of Deposits Account in your bank"],
+        "responses": [" CD (Certificate of Deposits) Account: In such account you have to deposit your money for the fixed period of time (5-7 years), and you will earn the interest on it. The rate of interest is decided by the bank, and you cannot withdraw the funds until the fixed period expires. <bank redirect link>"]
+        },
+        {"tag": "operateoption",
+         "patterns": ["What are the different ways to operate accounts?", "different ways to operate accounts", "ways to operate accounts?", "operating accounts"],
+         "responses": ["You can operate your bank accounts in different ways like a) Internet banking, b) Telephone or Mobile banking, c) Branch or Over the counter service, d) ATM(Automated Teller Machine)"]
+        },
+        {"tag": "accounts",
+         "patterns": ["Can an individual open a Current Account?", "individual open a Current Account", "how individual open a Current Account?"],
+         "responses": ["Yes. Documentation will be that of an individual, i.e. identity proof and address proof.Click here for documentation required for opening individual a Current Account."]
+        },
+        {"tag": "developers",
+        "patterns": ["Who made you?", "Developers?", "Origin"],
+        "responses": ["Hartej, Aniruddha and Pallavi"]
+        },
+        {"tag": "generic",
+        "patterns": ["Who made you?", "Developers?", "Origin"],
+        "responses": ["Hartej, Aniruddha and Pallavi"]
+        },
+        {"tag": "generic1",
+        "patterns": ["What are the Interest Rates?", "Interest Rates", "How to the Interest Rates apply"],
+        "responses": ["Please follow the link here to get your answer to the question: https://www.kotak.com/en/rates/interest-rates.html"]
+        },
+        {"tag": "generic2",
+        "patterns": ["Fees and Charges (GSFC)", "How to the GSFC apply", "Fees and Charges", "GSFC"],
+        "responses": ["Please follow the link here to get your answer to the question: https://www.kotak.com/en/gsfc.html"]
+        },
+        {"tag": "generic3",
+        "patterns": ["Goods and Services Tax(GST)", "GST", "Goods and Services", "How does GST apply", "What does GST cover"],
+        "responses": ["Please follow the link here to get your answer to the question: https://www.kotak.com/en/customer-service/important-customer-information/good-services-tax-gst.html"]
+        },
+        {"tag": "account-related",
+        "patterns": ["Bank account related query", "bank account", "account", "personal account"],
+        "responses": ["For personal bank account related details, enter Profile Password: "]
+        },
+        {"tag": "account-related1",
+        "patterns": ["Check my account balance.","Total money", "Account balance"],
+        "responses": ["$1234567"]
+        },
+        {"tag": "account-related2",
+        "patterns": ["Show my beneficiaries", "Beneficiaries"],
+        "responses": ["Person1, Person2, etc."]
+        },
+        {"tag": "account-related3",
+        "patterns": ["Fund transfer", "Transfer money", "Transaction"],
+        "responses": ["Enter details:"]
+        }
+   ]
+}
